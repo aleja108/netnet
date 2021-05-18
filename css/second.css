@@ -17,7 +17,22 @@ display: flex;
 
 .imagen-principal{
     margin: 80px 40px 25px 40px; 
-    width: 25%;
+    width: 28%;
+}
+/*media query principal*/
+
+@media screen and (max-width:800px) {
+    .imagen-principal{
+        align-content:center;
+        position: absolute;
+    }
+}
+@media screen and (max-width:800px) {
+    .resumen{
+        margin: 140px;
+        position: absolute;
+        text-align: center;
+    }
 }
 
 
@@ -30,7 +45,22 @@ display: flex;
     display: flex;
     align-items: center;
 }
+@media screen and (max-width:800px) {
+    .coincidencia{
+        margin: 130px;
+        position: absolute;
+        text-align: center;
+    }
+}
+.botones:hover{
+    color:rgb(58, 56, 56);
+}
 
+.botones{
+    font-size: 18px;
+    width: 250px;
+    height: 23px;
+}
 .porcentaje{
     color: #71D074;
     font-weight: 700;
@@ -55,15 +85,22 @@ display: flex;
 .resumen{
     margin-right: 80px;
     padding: 40px;
-    text-align: justify;
+    position:relative;
+    text-align:justify;
+
 }
 
 .botones-peli{
     /* padding: 40px; */
-    width: 40%;
+    width: 300px;
+    height:50px ;
     display: flex;
     justify-content: space-evenly;
 }
+
+
+
+
 
 
 
